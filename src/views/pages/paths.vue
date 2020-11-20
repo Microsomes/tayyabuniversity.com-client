@@ -25,7 +25,7 @@
 
             <div style="position:relative;bottom:30%;left:30%;width:600px;height:300px;background:black">
                 <div style="height:30%;width:100%;background:#171123;display:flex;align-items:center;justify-content:center;">
-                    <div style="height:100%;display:flex;align-items:center;justify-content:center;padding-top:10px;"><p style="color:white;font-family:'roboto';font-size:20px;">Sign up to my Email List</p></div>
+                    <div style="height:100%;display:flex;align-items:center;justify-content:center;padding-top:10px;"><p style="color:white;font-family:'roboto';font-size:20px;">Sign up to my Email List (coming soon)</p></div>
                 </div>
                 <div style="flex-flow:column;height:69%;width:100%;background:#ffffff;display:flex;align-items:start;justify-content:;">
                    
@@ -46,7 +46,31 @@
                     
             </div>
 
-        <div style="height:3000px;"></div>
+        <div style="height:100px;"></div>
+
+
+        <div style="height:800px;background:#181D27">
+
+            <div style="height:30%;width:100%;background:none;margin-top:50px;display:flex;">
+                <div style="width:20%;height:100%;background:red">
+                    <img src="../../assets/cheese.jpg" style="width:100%;height:100%;filter:blur(3px)"/>
+                </div>
+                <div style="flex-grow:1">
+                    <div style="margin-top:40px;">
+                        <h2 style="color:white;font-family:roboto">Tayyab University Paths</h2>
+                        <p style="color:white;font-family:roboto">..........</p>
+                        <p style="color:white;font-family:roboto">........</p>
+                        <p style="color:white;font-family:roboto">......</p>
+                        <p style="color:white;font-family:roboto">....</p>
+                        <p style="color:white;font-family:roboto">..</p>
+                    </div>
+                </div>
+                <div style="width:20%;height:100%;background:red">
+                    <img src="../../assets/hamster.jpg" style="width:100%;height:100%;filter:blur(3px)"/>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </template>
