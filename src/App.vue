@@ -11,17 +11,17 @@
     <ul class="navbar-nav ml-auto">
     <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
-        <a style="color:white;font-weight:bold" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a :style="{color: $router.currentRoute.path=='/' ? '#F9F7F3':'#A1E8AF' }" style="color:white;" class="nav-link" href="#">Home <span v-if="$router.currentRoute.path=='/d'" class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a style="color:white;font-weight:100" class="nav-link" href="#">Paths</a>
+        <a :style="{color: $router.currentRoute.path=='/paths' ? '#F9F7F3':'#A1E8AF' }" style="color:white;font-weight:100" class="nav-link" href="#">Paths</a>
       </li>
        <li class="nav-item">
-        <a style="color:white;font-weight:100" class="nav-link" href="#">Submit</a>
+        <a :style="{color: $router.currentRoute.path=='/submit' ? '#F9F7F3':'#A1E8AF' }" style="color:white;font-weight:100" class="nav-link" href="#">Submit</a>
       </li>
 
        <li class="nav-item">
-        <a style="color:white;font-weight:100" class="nav-link" href="#">FAQ</a>
+        <a :style="{color: $router.currentRoute.path=='/faq' ? '#F9F7F3':'#A1E8AF' }" style="color:white;font-weight:100" class="nav-link" href="#">FAQ</a>
       </li>
    
     </ul>

@@ -5,7 +5,9 @@
     </div>
     <div style="100vh;width:50%">
 
+
       <h1 style="font-family: 'M PLUS 1p', sans-serif;margin-top:0px;color:white">Welcome to the free University</h1>
+      
       <p style="font-family: roboto;margin-top:0px;padding-left:30px;padding-right:30px;color:white">Your friendly guide to free university resources, and a helping hand to the world of possibilities. Explore learn and become more knowledge. Get unstuck on the sticky path of becoming a software developer</p>
 
     <div style="display:flex;justify-content:center;margin-top:20px;color:white;margin-top:30px">
@@ -77,7 +79,8 @@
 
 <div style="display:flex;justify-content:center;margin-top:20px;">
 <div class="alert alert-success" style="padding-left:20px;padding-right:20px;" role="alert">
-  0/100 waiting in Queue (100 Spots available daily)
+  0/100 waiting in Queue (100 Spots available daily)      
+
 </div>
 </div>
 
