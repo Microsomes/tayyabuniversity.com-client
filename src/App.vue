@@ -1,10 +1,37 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    
+    <nav  style="background:#000000;opacity:0.9" class="navbar navbar-expand-lg">
+  <a class="navbar-brand" style="color:white;font-weight:bold" href="#">TayyabUniversity.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mr-auto ">
+      <li class="nav-item active">
+        <a style="color:white;font-weight:bold" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a style="color:white;font-weight:100" class="nav-link" href="#">Paths</a>
+      </li>
+       <li class="nav-item">
+        <a style="color:white;font-weight:100" class="nav-link" href="#">Submit</a>
+      </li>
+
+       <li class="nav-item">
+        <a style="color:white;font-weight:100" class="nav-link" href="#">FAQ</a>
+      </li>
+   
+    </ul>
+    </ul>
+     
+  </div>
+</nav>
+
+
+    <router-view />
   </div>
 </template>
 
@@ -23,10 +50,10 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: white !important;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
 }
 </style>
