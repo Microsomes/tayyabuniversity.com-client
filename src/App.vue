@@ -23,6 +23,10 @@
        <li @click="goTo('/faq')" class="nav-item">
         <a :style="{color: $router.currentRoute.path=='/faq' ? '#F9F7F3':'#A1E8AF' }" style="color:white;font-weight:100" class="nav-link" href="#">FAQ</a>
       </li>
+
+      <li @click="triggerSignIn" class="nav-item">
+        <a :style="{color: $router.currentRoute.path=='/faq' ? '#F9F7F3':'#A1E8AF' }" style="color:white;font-weight:100" class="nav-link" href="#">Login</a>
+      </li>
    
     </ul>
     </ul>
@@ -31,14 +35,58 @@
 </nav>
 
 
+<button style="display:none;" id="signInTrigger" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+ </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <router-view />
   </div>
 </template>
 
 
 <script>
+
+import firebase from './assets/firebase'
+
 export default {
   methods:{
+    triggerSignIn(){
+        var tr= document.getElementById("signInTrigger");
+        console.log(tr.click());
+    },
     goTo(route){
       this.$router.push(route);
     }
